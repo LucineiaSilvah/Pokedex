@@ -25,7 +25,8 @@ api.buscaPokemon = (offset = 0 , limit = 10)=>{
 
  return fetch(url)
  .then((response) => response.json())
- .then((dados) => dados.results)
+ .then((dados) => dados.results
+ )
  .then((pokemons) => pokemons.map( api.BuscaDetalhes))
  .then((requiDetails) => Promise.all(requiDetails))
  .then((pokemonsDetails) => pokemonsDetails)
