@@ -104,7 +104,7 @@ loadMoreBtn.addEventListener("click", () => {
 
 
 function showDetails(pokemon){
-
+  loadMoreBtn.style.visibility = 'hidden'
   listaPokemons.innerHTML = ''
   modal.style.visibility = 'visible'
    modal.innerHTML = `
